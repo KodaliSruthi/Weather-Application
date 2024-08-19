@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8bc0e3;
+}
+
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.city-input {
+    width: calc(100% - 22px); /* Adjusted for padding and border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #aa3434;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+.weather-cards {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #cb4646;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: calc(100% / 2 - 40px); /* Two cards per row */
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: calc(100% / 4 - 40px); /* Four cards per row on larger screens */
+    }
+}
